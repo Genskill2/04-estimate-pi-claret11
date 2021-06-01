@@ -43,6 +43,7 @@ float mc_pi(int n){
   int circle=0;
   int square=0;
   int x,y;
+  double origin_d;
   
   for(iny i=0;i<n;i++){
     x=frandom();
@@ -55,7 +56,7 @@ float mc_pi(int n){
       square++;
   }
   double pi;
-  pi=4*(double(circle)/square);
+  pi=double(4*circle)/square;
   return pi;
 }
   
