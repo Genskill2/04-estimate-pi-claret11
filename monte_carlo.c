@@ -48,7 +48,7 @@ float mc_pi(int n){
   for(iny i=0;i<n;i++){
     x=frandom();
     y=frandom();
-    origin_d=x*x+y*y;
+    origin_d=sqrt(x*x+y*y);
     
     if (origin_d<=1)
       circle++;
