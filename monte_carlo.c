@@ -42,7 +42,7 @@ int main(void) {
 float mc_pi(int n){
   double circle=0.0;
   double square=0.0;
-  double x,y;
+  float x,y;
   double origin_d;
   
   for(iny i=0;i<n;i++){
