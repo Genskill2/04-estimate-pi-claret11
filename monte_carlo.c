@@ -54,8 +54,8 @@ float mc_pi(int n){
     else 
       square++;
   }
-  float pi;
-  pi=(4*circle)/(circle+square);
+
+  float pi=(4*(circle/n));
   return pi;
 }
   
