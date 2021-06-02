@@ -40,22 +40,21 @@ int main(void) {
 }
 
 float mc_pi(int n){
-  double circle=0.0;
-  double square=0.0;
-  float x,y;
-  double origin_d;
+  double circle=0;
+  double square=0;
   
-  for(int i=0;i<n;i++){
-    x=frandom();
-    y=frandom();
-    origin_d=x*x+y*y;
+  
+  for(int i=0;i<=n;i++){
+    float x=frandom();
+    float y=frandom();
+    int origin_d=sqrt((x*x+y*y));
     
-    if (origin_d<=1)
+    if (origin_d<1)
       circle++;
     else 
       square++;
   }
-  double pi;
+  float pi;
   pi=(4*circle)/(circle+square);
   return pi;
 }
